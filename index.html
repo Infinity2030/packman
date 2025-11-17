@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Snack Man - Final Fixed</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header><h1>Snack Man!</h1></header>
+
+<div class="startDiv" id="startOverlay">
+  <div class="start" id="startPanel">
+    <img src="images/icon.png" alt="logo" id="logoImg">
+    <div class="start-controls">
+      <h2>Start</h2>
+      <button id="playBtn" class="big">Play</button>
+    </div>
+  </div>
+</div>
+
+<div class="leaderboard">
+  <h1>LeaderBoard:</h1>
+  <ol id="boardList">
+    <li>Chris........100</li>
+    <li>Mark.........75</li>
+  </ol>
+</div>
+
+<main id="gameArea" aria-label="game board"></main>
+
+<div class="lives">
+  <h1>Lives:</h1>
+  <ul id="livesList"></ul>
+</div>
+
+<div class="score">
+  <h1>Score:</h1>
+  <p id="scoreCounter">0</p>
+</div>
+
+<div class="controls">
+  <button id="lbttn">&#9664;</button>
+  <button id="ubttn">&#9650;</button>
+  <button id="rbttn">&#9654;</button>
+  <button id="dbttn">&#9660;</button>
+</div>
+
+<div id="messageArea" role="status" aria-live="polite"></div>
+</body>
+</html>
